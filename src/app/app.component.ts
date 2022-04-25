@@ -5,7 +5,21 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+  price = 500;
+  bbb = 10;
+
+  constructor() {
+    this.price = this.add100();
+  }
+
+  add100() {
+    let number = 10;
+    number = number + 100;
+
+    return number;
+  }
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
